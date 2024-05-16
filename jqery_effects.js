@@ -34,5 +34,50 @@ $(document).ready(function () {
             // Animation complete.
         });
     })
-
+    $(".btn8").click(() => {
+        $(".square").animate({
+            width: "200px",
+            height: "200px",
+            backgroundColor: "blue",
+            color: "yellow",
+            fontSize: "2em",
+            borderRadius: "50%"
+        }, 3000)
+            .animate({
+                width: "100px",
+                height: "100px",
+                backgroundColor: "red",
+                color: "white",
+                fontSize: "1em",
+                borderRadius: "0"
+            }, 2000)
+            .animate({
+                width: "150px",
+                height: "150px",
+                backgroundColor: "green",
+                color: "purple",
+                fontSize: "1.5em",
+                borderRadius: "25%"
+            }, 2000).animate({
+                width: "200px",
+                height: "200px",
+                backgroundColor: "red",
+                color: "white",
+                fontSize: "1.5em",
+                borderRadius: "10%"
+            }, 3000)
+            .animate({
+                rotate: "90deg",
+                backgroundColor: "red",
+                color: "red",
+                fontSize: "2em",
+                borderRadius: "0%"
+            }, 1000).animate({
+                rotate: "180deg",
+                backgroundColor: "black",
+                color: "black",
+                fontSize: "3em",
+                borderRadius: "90%"
+            }, 1000);
+    })
 })
