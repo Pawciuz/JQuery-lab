@@ -19,5 +19,20 @@ $(document).ready(function () {
         $(".items div:nth-child(2)").fadeTo(400, 0.5);
         $(".items div:nth-child(3)").fadeTo(800, 0.5);
     })
+    $(".btn5").click(() => {
+        $(".text").slideDown("slow", function () {
+            // Animation complete.
+        });
+    })
+    $(".btn6").click(() => {
+        $(".text").slideUp("slow", function () {
+            // Animation complete.
+        });
+    })
+    $(".btn7").click(() => {
+        $(".text").slideToggle("slow", function () {
+            // Animation complete.
+        });
+    })
 
 })
