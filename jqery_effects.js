@@ -38,7 +38,7 @@ $(document).ready(function () {
         $(".square").animate({
             width: "200px",
             height: "200px",
-            backgroundColor: "blue",
+            backgroundColor: "#FFF",
             color: "yellow",
             fontSize: "2em",
             borderRadius: "50%"
@@ -79,5 +79,18 @@ $(document).ready(function () {
                 fontSize: "3em",
                 borderRadius: "90%"
             }, 1000);
+    })
+    $(".btn9").click(() => {
+        $(".square").stop()
+    })
+    $(".btn10").click(() => {
+        $(".square").slideToggle("slow", function () {
+            $(".text").animate({
+                rotate: "100deg",
+            })
+        });
+    })
+    $(".btn11").click(() => {
+        $(".square").css("background-color", "blue").animate({ rotate: "90deg" })
     })
 })
